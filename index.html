@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <form action="#" method="">
+        <section class="input-section">
+          <div class="day required">
+            <label for="day">DAY</label>
+            <input type="text" id="day" name="day" placeholder="DD" />
+            <span class="error-message">This field is required</span>
+          </div>
+
+          <div class="month required">
+            <label for="month">MONTH</label>
+            <input type="text" id="month" name="month" placeholder="MM" />
+            <span class="error-message">This field is required</span>
+          </div>
+
+          <div class="year required">
+            <label for="year">YEAR</label>
+            <input type="text" id="year" name="year" placeholder="YYYY" />
+            <span class="error-message">This field is required</span>
+          </div>
+        </section>
+
+        <section class="arrow-icon">
+          <figure class="line">
+            <button class="send-img">
+              <img src="./assets/images/icon-arrow.svg" alt="arrow" />
+            </button>
+          </figure>
+        </section>
+
+        <section class="output-section">
+          <p><span class="years">- -</span> years</p>
+          <p><span class="months">- -</span> months</p>
+          <p><span class="days">- -</span> days</p>
+        </section>
+      </form>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/David-Zik" target="_blank"
+        >Cr8tiveDav-WebDev</a
+      >.
+    </div>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
